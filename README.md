@@ -1,5 +1,7 @@
 # community-rules
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/community-rules)
+
 A curated, attributed collection of community Rego policies, organized for use with the [Vulnetix CLI](https://github.com/Vulnetix/cli) `--rule` flag.
 
 ## Layout
