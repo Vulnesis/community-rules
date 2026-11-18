@@ -1,12 +1,12 @@
 # Adapted from https://github.com/rallyhealth/conftest-policy-packs
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.rally_docker_approved_registry
+package vulnetix.rules.rally_docker_approved_registry
 
 import rego.v1
 
-import data.vulnesis.rallyhealth.docker_utils
-import data.vulnesis.rallyhealth.util
+import data.vulnetix.rallyhealth.docker_utils
+import data.vulnetix.rallyhealth.util
 
 metadata := {
 	"id": "CTNRSEC-0001",

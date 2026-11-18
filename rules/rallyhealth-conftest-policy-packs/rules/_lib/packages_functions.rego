@@ -1,7 +1,7 @@
 # Adapted from https://github.com/rallyhealth/conftest-policy-packs
 # Helper package — not a rule (no metadata/findings).
 
-package vulnesis.rallyhealth.packages_utils
+package vulnetix.rallyhealth.packages_utils
 
 import rego.v1
 

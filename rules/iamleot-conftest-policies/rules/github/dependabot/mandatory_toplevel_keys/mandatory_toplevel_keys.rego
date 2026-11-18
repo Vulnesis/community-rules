@@ -2,11 +2,11 @@
 # Original License: BSD-2-Clause (see LICENSE).
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.iamleot_dependabot_toplevel
+package vulnetix.rules.iamleot_dependabot_toplevel
 
 import rego.v1
 
-import data.vulnesis.iamleot.dependabot_utils as utils
+import data.vulnetix.iamleot.dependabot_utils as utils
 
 metadata := {
 	"id": "IAMLEOT-DEP-001",

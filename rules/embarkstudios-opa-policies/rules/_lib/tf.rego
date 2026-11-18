@@ -5,7 +5,7 @@
 # by conftest). Under Vulnesis we scan raw `.tf` source via input.file_contents,
 # so this provides regex helpers to pull resource blocks and attributes.
 
-package vulnesis.embark.tf
+package vulnetix.embark.tf
 
 import rego.v1
 

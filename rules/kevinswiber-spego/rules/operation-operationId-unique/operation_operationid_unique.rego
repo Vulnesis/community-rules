@@ -4,11 +4,11 @@
 # The upstream rule was document-local. Under text scanning we retain that:
 # uniqueness is checked only among operations in the same OpenAPI document.
 
-package vulnesis.rules.spego_operation_operationid_unique
+package vulnetix.rules.spego_operation_operationid_unique
 
 import rego.v1
 
-import data.vulnesis.spego.openapi
+import data.vulnetix.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0011",

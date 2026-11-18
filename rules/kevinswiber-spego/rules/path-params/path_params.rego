@@ -13,11 +13,11 @@
 # upstream is out of scope because it depends on precise param name captures
 # and produces a lot of noise when applied by prefix alone.
 
-package vulnesis.rules.spego_path_params
+package vulnetix.rules.spego_path_params
 
 import rego.v1
 
-import data.vulnesis.spego.openapi
+import data.vulnetix.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0021",

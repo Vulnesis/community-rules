@@ -7,11 +7,11 @@
 # alongside a matching `module` call whose source is the approved module,
 # we allow it; otherwise we flag the resource.
 
-package vulnesis.rules.scalr_required_modules
+package vulnetix.rules.scalr_required_modules
 
 import rego.v1
 
-import data.vulnesis.scalr.tf
+import data.vulnetix.scalr.tf
 
 metadata := {
 	"id": "SCALR-MOD-0002",

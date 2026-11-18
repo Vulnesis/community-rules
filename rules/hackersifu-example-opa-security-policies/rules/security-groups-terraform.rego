@@ -2,7 +2,7 @@
 # Original License: Apache-2.0 (see LICENSE).
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.hackersifu_sg_terraform
+package vulnetix.rules.hackersifu_sg_terraform
 
 import rego.v1
 

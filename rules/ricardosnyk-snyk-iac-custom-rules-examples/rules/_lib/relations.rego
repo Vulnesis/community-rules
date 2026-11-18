@@ -3,7 +3,7 @@
 # Under Vulnesis's text-scanning model, rules perform joins by matching
 # referenced resource names via regex rather than via snyk.relates().
 
-package vulnesis.ricardosnyk.relations
+package vulnetix.ricardosnyk.relations
 
 import rego.v1
 

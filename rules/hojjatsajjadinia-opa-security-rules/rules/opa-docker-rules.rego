@@ -2,7 +2,7 @@
 # Original License: MIT (see LICENSE).
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.hojjat_docker_rules
+package vulnetix.rules.hojjat_docker_rules
 
 import rego.v1
 

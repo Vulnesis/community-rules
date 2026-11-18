@@ -2,7 +2,7 @@
 # Original License: Apache-2.0 (see LICENSE).
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.int128_docker_hub_image_pull_secrets
+package vulnetix.rules.int128_docker_hub_image_pull_secrets
 
 import rego.v1
 

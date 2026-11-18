@@ -5,11 +5,11 @@
 # `description` fields containing `eval(`. Walking the parsed object under
 # text scanning is preserved via `walk(spec.doc)`.
 
-package vulnesis.rules.spego_no_eval_in_markdown
+package vulnetix.rules.spego_no_eval_in_markdown
 
 import rego.v1
 
-import data.vulnesis.spego.openapi
+import data.vulnetix.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0022",

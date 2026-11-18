@@ -1,11 +1,11 @@
 # Adapted from https://github.com/kevinswiber/spego
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.spego_no_script_tags_in_markdown
+package vulnetix.rules.spego_no_script_tags_in_markdown
 
 import rego.v1
 
-import data.vulnesis.spego.openapi
+import data.vulnetix.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0023",

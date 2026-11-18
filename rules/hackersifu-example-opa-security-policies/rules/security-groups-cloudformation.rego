@@ -2,7 +2,7 @@
 # Original License: Apache-2.0 (see LICENSE).
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.hackersifu_sg_cloudformation
+package vulnetix.rules.hackersifu_sg_cloudformation
 
 import rego.v1
 

@@ -2,7 +2,7 @@
 # Original License: BSD-2-Clause (see LICENSE).
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.iamleot_iam_policy_attachment
+package vulnetix.rules.iamleot_iam_policy_attachment
 
 import rego.v1
 

@@ -1,11 +1,11 @@
 # Adapted from https://github.com/EmbarkStudios/opa-policies
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.embark_tf_gcp_36
+package vulnetix.rules.embark_tf_gcp_36
 
 import rego.v1
 
-import data.vulnesis.embark.tf
+import data.vulnetix.embark.tf
 
 metadata := {
 	"id": "EMBARK-TF-GCP-36",

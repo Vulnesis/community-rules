@@ -1,11 +1,11 @@
 # Adapted from https://github.com/EmbarkStudios/opa-policies
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.embark_k8s_host_port
+package vulnetix.rules.embark_k8s_host_port
 
 import rego.v1
 
-import data.vulnesis.embark.k8s
+import data.vulnetix.embark.k8s
 
 metadata := {
 	"id": "EMBARK-K8S-11",

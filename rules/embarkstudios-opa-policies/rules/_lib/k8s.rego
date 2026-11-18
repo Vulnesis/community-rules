@@ -1,7 +1,7 @@
 # Adapted from EmbarkStudios/opa-policies.
 # Kubernetes-YAML detection and parsing helpers for the Vulnesis port.
 
-package vulnesis.embark.k8s
+package vulnetix.embark.k8s
 
 import rego.v1
 

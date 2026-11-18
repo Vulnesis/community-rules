@@ -1,11 +1,11 @@
 # Adapted from https://github.com/ricardosnyk/snyk-iac-custom-rules-examples
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.ricardo_no_public_ec2
+package vulnetix.rules.ricardo_no_public_ec2
 
 import rego.v1
 
-import data.vulnesis.ricardosnyk.relations
+import data.vulnetix.ricardosnyk.relations
 
 metadata := {
 	"id": "RICARDO-EC2-PUBLIC-001",

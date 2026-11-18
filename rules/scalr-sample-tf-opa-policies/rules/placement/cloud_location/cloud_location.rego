@@ -6,11 +6,11 @@
 # the azurerm resource `location` attribute, and the google resource `zone`
 # attribute — each against its provider-specific allow-list.
 
-package vulnesis.rules.scalr_cloud_location
+package vulnetix.rules.scalr_cloud_location
 
 import rego.v1
 
-import data.vulnesis.scalr.tf
+import data.vulnetix.scalr.tf
 
 metadata := {
 	"id": "SCALR-PLACE-0001",

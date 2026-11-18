@@ -5,11 +5,11 @@
 # latest LTS Node release. The Vulnesis scanner runs offline, so this port
 # hard-codes a minimum LTS floor. Update `_min_lts_major` as Node LTS moves.
 
-package vulnesis.rules.rally_nodejs_recent_version
+package vulnetix.rules.rally_nodejs_recent_version
 
 import rego.v1
 
-import data.vulnesis.rallyhealth.packages_utils
+import data.vulnetix.rallyhealth.packages_utils
 
 metadata := {
 	"id": "PKGSEC-0002",

@@ -8,11 +8,11 @@
 #   (2) KMS key ID / ARN attributes on supported resources must reference a
 #       `data.aws_kms_key.*` source rather than a raw string.
 
-package vulnesis.rules.scalr_enforce_kms_key_names
+package vulnetix.rules.scalr_enforce_kms_key_names
 
 import rego.v1
 
-import data.vulnesis.scalr.tf
+import data.vulnetix.scalr.tf
 
 metadata := {
 	"id": "SCALR-AWS-0006",

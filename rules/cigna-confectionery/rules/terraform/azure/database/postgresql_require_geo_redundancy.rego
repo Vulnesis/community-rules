@@ -1,11 +1,11 @@
 # Adapted from https://github.com/cigna/confectionery
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.cigna_tf_az_db_03
+package vulnetix.rules.cigna_tf_az_db_03
 
 import rego.v1
 
-import data.vulnesis.cigna.tf
+import data.vulnetix.cigna.tf
 
 metadata := {
 	"id": "CIGNA-TF-AZ-DB-03",

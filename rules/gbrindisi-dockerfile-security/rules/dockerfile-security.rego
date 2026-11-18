@@ -3,7 +3,7 @@
 # Ported to the Vulnesis Rego input schema: `input.file_contents`
 # maps file path -> full file text content.
 
-package vulnesis.rules.gbrindisi_dockerfile_security
+package vulnetix.rules.gbrindisi_dockerfile_security
 
 import rego.v1
 

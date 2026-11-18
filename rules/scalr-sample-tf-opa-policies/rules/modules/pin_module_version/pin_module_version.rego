@@ -1,11 +1,11 @@
 # Adapted from https://github.com/Scalr/sample-tf-opa-policies
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.scalr_pin_module_version
+package vulnetix.rules.scalr_pin_module_version
 
 import rego.v1
 
-import data.vulnesis.scalr.tf
+import data.vulnetix.scalr.tf
 
 metadata := {
 	"id": "SCALR-MOD-0001",

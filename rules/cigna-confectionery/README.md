@@ -10,12 +10,12 @@ The upstream ruleset is built on **Fugue Regula**: rules query a parsed HCL/JSON
 
 This port rewrites each rule to the Vulnesis custom SAST schema:
 
-- `package vulnesis.rules.cigna_tf_<cloud>_<service>_<nn>`
+- `package vulnetix.rules.cigna_tf_<cloud>_<service>_<nn>`
 - `import rego.v1`
 - A `metadata` object (`id`, `name`, `description`, `help_uri`, `languages`, `severity`, `level`, `kind`, `cwe`, `capec`, `attack_technique`, `cvssv4`, `cwss`, `tags`)
 - A `findings contains finding if { ... }` set rule that walks `input.file_contents` (map of file path → raw file contents)
 
-A shared helper package at `rules/_lib/tf.rego` (`package vulnesis.cigna.tf`) does regex-based HCL extraction — resource/data blocks, attributes, nested sub-blocks, IAM policy heuristics — so each rule stays small and focused.
+A shared helper package at `rules/_lib/tf.rego` (`package vulnetix.cigna.tf`) does regex-based HCL extraction — resource/data blocks, attributes, nested sub-blocks, IAM policy heuristics — so each rule stays small and focused.
 
 ## Layout
 

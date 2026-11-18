@@ -1,11 +1,11 @@
 # Adapted from https://github.com/Scalr/sample-tf-opa-policies
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.scalr_enforce_instance_subnet
+package vulnetix.rules.scalr_enforce_instance_subnet
 
 import rego.v1
 
-import data.vulnesis.scalr.tf
+import data.vulnetix.scalr.tf
 
 metadata := {
 	"id": "SCALR-AWS-0005",

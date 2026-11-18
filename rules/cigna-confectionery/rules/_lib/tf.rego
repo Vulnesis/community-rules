@@ -6,7 +6,7 @@
 # input.file_contents, so this provides regex helpers to pull resource blocks,
 # attributes, and sub-blocks.
 
-package vulnesis.cigna.tf
+package vulnetix.cigna.tf
 
 import rego.v1
 

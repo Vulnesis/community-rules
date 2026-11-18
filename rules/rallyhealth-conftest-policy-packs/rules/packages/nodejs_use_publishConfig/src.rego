@@ -1,11 +1,11 @@
 # Adapted from https://github.com/rallyhealth/conftest-policy-packs
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.rally_nodejs_publish_config
+package vulnetix.rules.rally_nodejs_publish_config
 
 import rego.v1
 
-import data.vulnesis.rallyhealth.packages_utils
+import data.vulnetix.rallyhealth.packages_utils
 
 metadata := {
 	"id": "PKGSEC-0003",

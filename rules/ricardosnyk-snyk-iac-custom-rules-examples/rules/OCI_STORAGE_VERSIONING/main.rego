@@ -1,11 +1,11 @@
 # Adapted from https://github.com/ricardosnyk/snyk-iac-custom-rules-examples
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.ricardo_oci_storage_versioning
+package vulnetix.rules.ricardo_oci_storage_versioning
 
 import rego.v1
 
-import data.vulnesis.ricardosnyk.relations
+import data.vulnetix.ricardosnyk.relations
 
 metadata := {
 	"id": "RICARDO-OCI-VER-001",

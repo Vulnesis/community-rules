@@ -6,7 +6,7 @@
 # source via input.file_contents, so we need regex helpers to pull resource
 # blocks, attributes, and sub-blocks.
 
-package vulnesis.scalr.tf
+package vulnetix.scalr.tf
 
 import rego.v1
 

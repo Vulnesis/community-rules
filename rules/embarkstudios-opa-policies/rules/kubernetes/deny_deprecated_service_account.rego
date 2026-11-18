@@ -1,11 +1,11 @@
 # Adapted from https://github.com/EmbarkStudios/opa-policies
 # Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnesis.rules.embark_k8s_deprecated_sa_field
+package vulnetix.rules.embark_k8s_deprecated_sa_field
 
 import rego.v1
 
-import data.vulnesis.embark.k8s
+import data.vulnetix.embark.k8s
 
 metadata := {
 	"id": "EMBARK-K8S-07",
