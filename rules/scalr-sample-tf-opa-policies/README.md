@@ -82,7 +82,7 @@ Other limitations of the port (vs. plan-based checks):
 ## Using with the Vulnesis CLI
 
 ```bash
-vulnesis scan --rule Vulnesis/community-rules
+vulnetix scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

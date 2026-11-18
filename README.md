@@ -1,6 +1,6 @@
 # community-rules
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/community-rules)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/community-rules)
 
 A curated, attributed collection of community Rego policies, organized for use with the [Vulnesis CLI](https://github.com/Vulnesis/cli) `--rule` flag.
 
@@ -23,7 +23,7 @@ Each `<normalized-source>` directory corresponds to one upstream repository. The
 Load the whole collection from this repository:
 
 ```bash
-vulnesis scan --rule Vulnesis/community-rules
+vulnetix scan --rule Vulnesis/community-rules
 ```
 
 The Vulnesis CLI walks every `.rego` file under `rules/` recursively, so all subdirectories are picked up automatically.

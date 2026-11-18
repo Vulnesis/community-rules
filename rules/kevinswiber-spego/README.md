@@ -70,7 +70,7 @@ Notes on the port vs. upstream:
 ## Using with the Vulnesis CLI
 
 ```bash
-vulnesis scan --rule Vulnesis/community-rules
+vulnetix scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

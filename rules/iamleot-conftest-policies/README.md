@@ -35,7 +35,7 @@ iamleot-conftest-policies/
 
 ```bash
 # Loads and emits findings directly under the Vulnesis CLI.
-vulnesis scan --rule Vulnesis/community-rules
+vulnetix scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

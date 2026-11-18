@@ -32,7 +32,7 @@ The rule file in this directory has been **ported** from the Conftest-parsed-Doc
 
 ```bash
 # Loads and emits findings directly under the Vulnesis CLI.
-vulnesis scan --rule Vulnesis/community-rules
+vulnetix scan --rule Vulnesis/community-rules
 ```
 
 ## Licensing note
