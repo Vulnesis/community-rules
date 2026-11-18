@@ -13,9 +13,9 @@ the upstream input schema with helpers that parse the text directly.
 
 ```
 _lib/
-  docker.rego   # vulnesis.embark.docker — Dockerfile instruction parser
-  k8s.rego      # vulnesis.embark.k8s    — multi-doc YAML workload parser
-  tf.rego       # vulnesis.embark.tf     — regex-based HCL resource scanner
+  docker.rego   # vulnetix.embark.docker — Dockerfile instruction parser
+  k8s.rego      # vulnetix.embark.k8s    — multi-doc YAML workload parser
+  tf.rego       # vulnetix.embark.tf     — regex-based HCL resource scanner
 policies/
   docker/         # 7 Dockerfile rules
   kubernetes/     # 20 Kubernetes rules

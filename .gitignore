@@ -3,7 +3,5 @@
 # not source. They carry no commits main does not already have.
 .claude/
 .vulnetix/
-.vulnesis/
 !.vulnetix/workflow.yaml
-!.vulnesis/workflow.yaml
 !.vulnetix/workflow.yaml

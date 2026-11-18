@@ -20,9 +20,9 @@ rallyhealth-conftest-policy-packs/
 │   │   ├── deny_image_unless_from_registry/src.rego    (CTNRSEC-0001)
 │   │   └── sensitive_keys_in_env_args/src.rego         (CTNRSEC-0002)
 │   ├── lib/
-│   │   ├── docker_functions.rego                       (vulnesis.rallyhealth.docker_utils)
-│   │   ├── packages_functions.rego                     (vulnesis.rallyhealth.packages_utils)
-│   │   └── util_functions.rego                         (vulnesis.rallyhealth.util)
+│   │   ├── docker_functions.rego                       (vulnetix.rallyhealth.docker_utils)
+│   │   ├── packages_functions.rego                     (vulnetix.rallyhealth.packages_utils)
+│   │   └── util_functions.rego                         (vulnetix.rallyhealth.util)
 │   ├── packages/
 │   │   ├── nodejs_must_use_recent_version/src.rego     (PKGSEC-0002)
 │   │   ├── nodejs_package_must_use_org_scope/src.rego  (PKGSEC-0001)
@@ -41,7 +41,7 @@ rallyhealth-conftest-policy-packs/
 **Ported** to the Vulnesis `input.file_contents` text-scanning shape:
 
 - Dockerfile rules scan lines for `FROM` / `ENV` / `ARG` directives.
-- Terraform rules use regex-based HCL block scanning (see `vulnesis.rallyhealth.util.resource_blocks`).
+- Terraform rules use regex-based HCL block scanning (see `vulnetix.rallyhealth.util.resource_blocks`).
 - `package.json` rules parse each matched file with `json.unmarshal`.
 
 Upstream-specific behavior that cannot be faithfully replicated without external state is removed:

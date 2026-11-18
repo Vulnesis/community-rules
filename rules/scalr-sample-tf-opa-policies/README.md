@@ -33,7 +33,7 @@ cloud location allow-list (SCALR-PLACE-0001), provider blacklist
 ```
 scalr-sample-tf-opa-policies/
 ├── policies/
-│   ├── _lib/tf.rego            (vulnesis.scalr.tf helper package)
+│   ├── _lib/tf.rego            (vulnetix.scalr.tf helper package)
 │   ├── aws/**                  (12 rules)
 │   ├── cost/**                 (1 no-op stub)
 │   ├── external_data/**        (1 no-op stub)

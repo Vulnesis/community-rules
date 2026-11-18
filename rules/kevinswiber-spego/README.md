@@ -42,7 +42,7 @@ ruleset. Each rule walks every OpenAPI document found in
 
 ```
 kevinswiber-spego/
-├── _lib/openapi.rego          (vulnesis.spego.openapi helper)
+├── _lib/openapi.rego          (vulnetix.spego.openapi helper)
 ├── policies/
 │   └── <rule-name>/<rule-name>.rego
 └── README.md
@@ -51,7 +51,7 @@ kevinswiber-spego/
 ## Input-schema compatibility
 
 **Ported** to the Vulnesis `input.file_contents` input shape. The shared
-helper `vulnesis.spego.openapi` detects OpenAPI/Swagger files by extension
+helper `vulnetix.spego.openapi` detects OpenAPI/Swagger files by extension
 (`.yaml`, `.yml`, `.json`), parses them with `yaml.unmarshal` /
 `json.unmarshal`, and exposes the parsed docs via `openapi.specs`. Each
 rule iterates over `openapi.specs` and applies the equivalent Spectral

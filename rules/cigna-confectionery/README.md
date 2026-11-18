@@ -31,7 +31,7 @@ cigna-confectionery/
 └── README.md
 ```
 
-Upstream cruft (`examples/`, `rules/terraform/regula.rego`, the Regula utilities subtrees) has been removed; only ported Vulnesis-schema rules and their helpers remain.
+Upstream cruft (`examples/`, `rules/terraform/regula.rego`, the Regula utilities subtrees) has been removed; only ported Vulnetix-schema rules and their helpers remain.
 
 ## Rule ID scheme
 
