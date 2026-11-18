@@ -1,11 +1,11 @@
 # Adapted from https://github.com/cigna/confectionery
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.cigna_tf_az_redis_02
+package vulnesis.rules.cigna_tf_az_redis_02
 
 import rego.v1
 
-import data.vulnetix.cigna.tf
+import data.vulnesis.cigna.tf
 
 metadata := {
 	"id": "CIGNA-TF-AZ-REDIS-02",

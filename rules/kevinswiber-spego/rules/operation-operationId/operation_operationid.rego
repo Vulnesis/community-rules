@@ -1,11 +1,11 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.spego_operation_operationid
+package vulnesis.rules.spego_operation_operationid
 
 import rego.v1
 
-import data.vulnetix.spego.openapi
+import data.vulnesis.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0010",

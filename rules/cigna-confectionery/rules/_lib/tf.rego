@@ -1,12 +1,12 @@
 # Helper package — not a rule (no metadata/findings).
-# Shared by the Cigna/confectionery Vulnetix ports.
+# Shared by the Cigna/confectionery Vulnesis ports.
 #
 # Upstream rules use the Fugue Regula framework's parsed-HCL schema via
-# `data.fugue.resources(<type>)`. Under Vulnetix we scan raw `.tf` via
+# `data.fugue.resources(<type>)`. Under Vulnesis we scan raw `.tf` via
 # input.file_contents, so this provides regex helpers to pull resource blocks,
 # attributes, and sub-blocks.
 
-package vulnetix.cigna.tf
+package vulnesis.cigna.tf
 
 import rego.v1
 

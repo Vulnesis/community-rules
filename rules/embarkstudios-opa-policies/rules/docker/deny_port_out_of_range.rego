@@ -1,11 +1,11 @@
 # Adapted from https://github.com/EmbarkStudios/opa-policies
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.embark_docker_port_range
+package vulnesis.rules.embark_docker_port_range
 
 import rego.v1
 
-import data.vulnetix.embark.docker
+import data.vulnesis.embark.docker
 
 metadata := {
 	"id": "EMBARK-DOCKER-07",

@@ -20,9 +20,9 @@ rallyhealth-conftest-policy-packs/
 │   │   ├── deny_image_unless_from_registry/src.rego    (CTNRSEC-0001)
 │   │   └── sensitive_keys_in_env_args/src.rego         (CTNRSEC-0002)
 │   ├── lib/
-│   │   ├── docker_functions.rego                       (vulnetix.rallyhealth.docker_utils)
-│   │   ├── packages_functions.rego                     (vulnetix.rallyhealth.packages_utils)
-│   │   └── util_functions.rego                         (vulnetix.rallyhealth.util)
+│   │   ├── docker_functions.rego                       (vulnesis.rallyhealth.docker_utils)
+│   │   ├── packages_functions.rego                     (vulnesis.rallyhealth.packages_utils)
+│   │   └── util_functions.rego                         (vulnesis.rallyhealth.util)
 │   ├── packages/
 │   │   ├── nodejs_must_use_recent_version/src.rego     (PKGSEC-0002)
 │   │   ├── nodejs_package_must_use_org_scope/src.rego  (PKGSEC-0001)
@@ -38,10 +38,10 @@ rallyhealth-conftest-policy-packs/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` text-scanning shape:
+**Ported** to the Vulnesis `input.file_contents` text-scanning shape:
 
 - Dockerfile rules scan lines for `FROM` / `ENV` / `ARG` directives.
-- Terraform rules use regex-based HCL block scanning (see `vulnetix.rallyhealth.util.resource_blocks`).
+- Terraform rules use regex-based HCL block scanning (see `vulnesis.rallyhealth.util.resource_blocks`).
 - `package.json` rules parse each matched file with `json.unmarshal`.
 
 Upstream-specific behavior that cannot be faithfully replicated without external state is removed:
@@ -49,10 +49,10 @@ Upstream-specific behavior that cannot be faithfully replicated without external
 - `nodejs_must_use_recent_version` no longer calls `http.send` to fetch the live Node release schedule; instead it hard-codes `_min_lts_major = 20` (adjust as Node LTS moves).
 - Configurable allow-lists (approved private registries, approved org scopes, approved publish registries, required tags) are now local `_*` locals at the top of each rule file — fork and tailor.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-vulnetix scan --rule Vulnetix/community-rules
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

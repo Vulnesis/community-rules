@@ -1,11 +1,11 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.spego_path_keys_no_trailing_slash
+package vulnesis.rules.spego_path_keys_no_trailing_slash
 
 import rego.v1
 
-import data.vulnetix.spego.openapi
+import data.vulnesis.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0019",

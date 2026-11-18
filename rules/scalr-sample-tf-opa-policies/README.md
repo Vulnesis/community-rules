@@ -13,7 +13,7 @@ into two groups:
 
 | Group | Count | Notes |
 |---|---|---|
-| HCL-scannable | 22 | Ported to emit Vulnetix findings over `.tf` source |
+| HCL-scannable | 22 | Ported to emit Vulnesis findings over `.tf` source |
 | Scalr-runtime-only | 9 | Kept as no-op metadata stubs — see below |
 
 HCL-scannable rules cover: resource-type allow-list (SCALR-AWS-0001),
@@ -33,7 +33,7 @@ cloud location allow-list (SCALR-PLACE-0001), provider blacklist
 ```
 scalr-sample-tf-opa-policies/
 ├── policies/
-│   ├── _lib/tf.rego            (vulnetix.scalr.tf helper package)
+│   ├── _lib/tf.rego            (vulnesis.scalr.tf helper package)
 │   ├── aws/**                  (12 rules)
 │   ├── cost/**                 (1 no-op stub)
 │   ├── external_data/**        (1 no-op stub)
@@ -49,9 +49,9 @@ scalr-sample-tf-opa-policies/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` text-scanning shape. Upstream
+**Ported** to the Vulnesis `input.file_contents` text-scanning shape. Upstream
 rules consumed Terraform plan JSON (`input.tfplan.resource_changes`) or Scalr
-runtime metadata (`input.tfrun.*`). Under Vulnetix the scanner never invokes
+runtime metadata (`input.tfrun.*`). Under Vulnesis the scanner never invokes
 Terraform or Scalr, so this port replaces plan-tree traversal with regex-based
 HCL block scanning over raw `.tf` source.
 
@@ -79,10 +79,10 @@ Other limitations of the port (vs. plan-based checks):
   simpler "is there a module call whose source matches?" check within the
   same file.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-vulnetix scan --rule Vulnetix/community-rules
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

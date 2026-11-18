@@ -1,11 +1,11 @@
 # Adapted from https://github.com/ricardosnyk/snyk-iac-custom-rules-examples
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.ricardo_password_policy
+package vulnesis.rules.ricardo_password_policy
 
 import rego.v1
 
-import data.vulnetix.ricardosnyk.relations
+import data.vulnesis.ricardosnyk.relations
 
 metadata := {
 	"id": "RICARDO-IAM-PWD-001",

@@ -1,12 +1,12 @@
 # Adapted from https://github.com/iamleot/conftest-policies
 # Original License: BSD-2-Clause (see LICENSE).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.iamleot_dependabot_toplevel
+package vulnesis.rules.iamleot_dependabot_toplevel
 
 import rego.v1
 
-import data.vulnetix.iamleot.dependabot_utils as utils
+import data.vulnesis.iamleot.dependabot_utils as utils
 
 metadata := {
 	"id": "IAMLEOT-DEP-001",

@@ -33,13 +33,13 @@ ricardosnyk-snyk-iac-custom-rules-examples/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` text-scanning shape. The `snyk.resources()` / `snyk.relates()` joins have been replaced with regex-based HCL block scanning via `lib/relations.rego`. Each rule emits Vulnetix-format findings directly.
+**Ported** to the Vulnesis `input.file_contents` text-scanning shape. The `snyk.resources()` / `snyk.relates()` joins have been replaced with regex-based HCL block scanning via `lib/relations.rego`. Each rule emits Vulnesis-format findings directly.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-# Loads and emits findings directly under the Vulnetix CLI.
-vulnetix scan --rule Vulnetix/community-rules
+# Loads and emits findings directly under the Vulnesis CLI.
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

@@ -1,8 +1,8 @@
 # Adapted from https://github.com/hojjatsajjadinia/OPA-Security-Rules
 # Original License: MIT (see LICENSE).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.hojjat_docker_rules
+package vulnesis.rules.hojjat_docker_rules
 
 import rego.v1
 

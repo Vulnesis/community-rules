@@ -8,14 +8,14 @@
 
 The upstream ruleset is built on **Fugue Regula**: rules query a parsed HCL/JSON resource view via `data.fugue.resources(<type>)` and emit judgements with `fugue.deny_resource_with_message(...)`.
 
-This port rewrites each rule to the Vulnetix custom SAST schema:
+This port rewrites each rule to the Vulnesis custom SAST schema:
 
-- `package vulnetix.rules.cigna_tf_<cloud>_<service>_<nn>`
+- `package vulnesis.rules.cigna_tf_<cloud>_<service>_<nn>`
 - `import rego.v1`
 - A `metadata` object (`id`, `name`, `description`, `help_uri`, `languages`, `severity`, `level`, `kind`, `cwe`, `capec`, `attack_technique`, `cvssv4`, `cwss`, `tags`)
 - A `findings contains finding if { ... }` set rule that walks `input.file_contents` (map of file path → raw file contents)
 
-A shared helper package at `rules/_lib/tf.rego` (`package vulnetix.cigna.tf`) does regex-based HCL extraction — resource/data blocks, attributes, nested sub-blocks, IAM policy heuristics — so each rule stays small and focused.
+A shared helper package at `rules/_lib/tf.rego` (`package vulnesis.cigna.tf`) does regex-based HCL extraction — resource/data blocks, attributes, nested sub-blocks, IAM policy heuristics — so each rule stays small and focused.
 
 ## Layout
 
@@ -25,13 +25,13 @@ cigna-confectionery/
 │   ├── _lib/
 │   │   └── tf.rego                    # shared HCL regex helpers
 │   └── terraform/
-│       ├── aws/<service>/<rule>.rego    # ported Vulnetix rules
-│       └── azure/<service>/<rule>.rego  # ported Vulnetix rules
+│       ├── aws/<service>/<rule>.rego    # ported Vulnesis rules
+│       └── azure/<service>/<rule>.rego  # ported Vulnesis rules
 ├── LICENSE
 └── README.md
 ```
 
-Upstream cruft (`examples/`, `rules/terraform/regula.rego`, the Regula utilities subtrees) has been removed; only ported Vulnetix-schema rules and their helpers remain.
+Upstream cruft (`examples/`, `rules/terraform/regula.rego`, the Regula utilities subtrees) has been removed; only ported Vulnesis-schema rules and their helpers remain.
 
 ## Rule ID scheme
 

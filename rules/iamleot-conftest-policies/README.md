@@ -29,13 +29,13 @@ iamleot-conftest-policies/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` text-scanning shape. Each rule keys off the file path (via a `glob`/regex check for `.github/workflows/*.yml`, `.github/dependabot.yml`, `*.tf`, or Venom `testcases:`-bearing YAML) and then applies line/block pattern checks against the raw file text.
+**Ported** to the Vulnesis `input.file_contents` text-scanning shape. Each rule keys off the file path (via a `glob`/regex check for `.github/workflows/*.yml`, `.github/dependabot.yml`, `*.tf`, or Venom `testcases:`-bearing YAML) and then applies line/block pattern checks against the raw file text.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-# Loads and emits findings directly under the Vulnetix CLI.
-vulnetix scan --rule Vulnetix/community-rules
+# Loads and emits findings directly under the Vulnesis CLI.
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

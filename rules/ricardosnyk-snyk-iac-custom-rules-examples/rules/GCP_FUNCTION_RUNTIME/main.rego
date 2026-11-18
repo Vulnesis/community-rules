@@ -1,12 +1,12 @@
 # Adapted from https://github.com/ricardosnyk/snyk-iac-custom-rules-examples
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.ricardo_gcp_function_runtime
+package vulnesis.rules.ricardo_gcp_function_runtime
 
 import rego.v1
 
-import data.vulnetix.ricardosnyk.relations
-import data.vulnetix.ricardosnyk.gcp_deprecated_runtimes as runtimes
+import data.vulnesis.ricardosnyk.relations
+import data.vulnesis.ricardosnyk.gcp_deprecated_runtimes as runtimes
 
 metadata := {
 	"id": "RICARDO-GCP-FN-001",

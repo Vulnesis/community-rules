@@ -1,7 +1,7 @@
 # Adapted from EmbarkStudios/opa-policies.
-# Dockerfile parsing helpers for the Vulnetix port.
+# Dockerfile parsing helpers for the Vulnesis port.
 
-package vulnetix.embark.docker
+package vulnesis.embark.docker
 
 import rego.v1
 

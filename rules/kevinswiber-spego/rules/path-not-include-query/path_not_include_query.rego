@@ -1,11 +1,11 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.spego_path_not_include_query
+package vulnesis.rules.spego_path_not_include_query
 
 import rego.v1
 
-import data.vulnetix.spego.openapi
+import data.vulnesis.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0020",

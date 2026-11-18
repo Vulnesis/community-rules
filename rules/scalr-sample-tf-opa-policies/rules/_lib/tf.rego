@@ -1,12 +1,12 @@
 # Helper package — not a rule (no metadata/findings).
-# Shared by the Scalr sample-tf-opa-policies Vulnetix ports.
+# Shared by the Scalr sample-tf-opa-policies Vulnesis ports.
 #
 # Upstream rules consumed Terraform plan JSON (input.tfplan.resource_changes)
-# or Scalr runtime metadata (input.tfrun). Under Vulnetix we scan raw `.tf`
+# or Scalr runtime metadata (input.tfrun). Under Vulnesis we scan raw `.tf`
 # source via input.file_contents, so we need regex helpers to pull resource
 # blocks, attributes, and sub-blocks.
 
-package vulnetix.scalr.tf
+package vulnesis.scalr.tf
 
 import rego.v1
 

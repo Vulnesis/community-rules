@@ -1,5 +1,5 @@
 # Adapted from https://github.com/Scalr/sample-tf-opa-policies
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 #
 # Upstream used plan-tree `module_address` to distinguish root-module vs
 # module-declared resources. Under text scanning we approximate with a
@@ -7,11 +7,11 @@
 # alongside a matching `module` call whose source is the approved module,
 # we allow it; otherwise we flag the resource.
 
-package vulnetix.rules.scalr_required_modules
+package vulnesis.rules.scalr_required_modules
 
 import rego.v1
 
-import data.vulnetix.scalr.tf
+import data.vulnesis.scalr.tf
 
 metadata := {
 	"id": "SCALR-MOD-0002",

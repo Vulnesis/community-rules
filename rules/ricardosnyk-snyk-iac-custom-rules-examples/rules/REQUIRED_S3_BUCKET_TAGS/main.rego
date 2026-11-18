@@ -1,11 +1,11 @@
 # Adapted from https://github.com/ricardosnyk/snyk-iac-custom-rules-examples
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.ricardo_s3_required_tags
+package vulnesis.rules.ricardo_s3_required_tags
 
 import rego.v1
 
-import data.vulnetix.ricardosnyk.relations
+import data.vulnesis.ricardosnyk.relations
 
 metadata := {
 	"id": "RICARDO-S3-TAGS-001",

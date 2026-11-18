@@ -1,12 +1,12 @@
 # community-rules
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/community-rules)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/community-rules)
 
-A curated, attributed collection of community Rego policies, organized for use with the [Vulnetix CLI](https://github.com/Vulnetix/cli) `--rule` flag.
+A curated, attributed collection of community Rego policies, organized for use with the [Vulnesis CLI](https://github.com/Vulnesis/cli) `--rule` flag.
 
 ## Layout
 
-All rules live under `rules/` so that the Vulnetix CLI will discover them:
+All rules live under `rules/` so that the Vulnesis CLI will discover them:
 
 ```
 community-rules/
@@ -23,10 +23,10 @@ Each `<normalized-source>` directory corresponds to one upstream repository. The
 Load the whole collection from this repository:
 
 ```bash
-vulnetix scan --rule Vulnetix/community-rules
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
-The Vulnetix CLI walks every `.rego` file under `rules/` recursively, so all subdirectories are picked up automatically.
+The Vulnesis CLI walks every `.rego` file under `rules/` recursively, so all subdirectories are picked up automatically.
 
 To use a specific upstream's rules only, create a fork or a thin copy that keeps just one subdirectory under `rules/`.
 
@@ -36,14 +36,14 @@ Most upstream Rego rule collections were written for other tools — OPA/Gatekee
 
 | Tool | `input` shape |
 |---|---|
-| **Vulnetix** (this CLI) | `{ "file_contents": { "<path>": "<full file text>" } }` |
+| **Vulnesis** (this CLI) | `{ "file_contents": { "<path>": "<full file text>" } }` |
 | Conftest | Parsed YAML/JSON/Terraform/Dockerfile document |
 | Gatekeeper | Kubernetes admission review object |
 | Regula | Terraform plan / CloudFormation / Kubernetes manifest object |
 
-Rules in this repository that were written against a different `input` schema **will load but will not produce findings** when run under the Vulnetix CLI unless adapted. Each subdirectory README documents the upstream's expected input and whether/how the rules are directly usable.
+Rules in this repository that were written against a different `input` schema **will load but will not produce findings** when run under the Vulnesis CLI unless adapted. Each subdirectory README documents the upstream's expected input and whether/how the rules are directly usable.
 
-For rules that are adapted or wrapped for Vulnetix compatibility, the subdirectory README describes the transformation.
+For rules that are adapted or wrapped for Vulnesis compatibility, the subdirectory README describes the transformation.
 
 ## Attribution and licensing
 

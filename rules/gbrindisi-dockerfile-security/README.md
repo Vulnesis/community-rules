@@ -26,13 +26,13 @@ gbrindisi-dockerfile-security/
 
 ## Input-schema compatibility
 
-The rule file in this directory has been **ported** from the Conftest-parsed-Dockerfile `input[i]` shape to the Vulnetix `input.file_contents` text-scanning shape. The adapted rule performs line-based pattern matching on any file matching `Dockerfile`, `*.dockerfile`, or `Dockerfile.*`.
+The rule file in this directory has been **ported** from the Conftest-parsed-Dockerfile `input[i]` shape to the Vulnesis `input.file_contents` text-scanning shape. The adapted rule performs line-based pattern matching on any file matching `Dockerfile`, `*.dockerfile`, or `Dockerfile.*`.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-# Loads and emits findings directly under the Vulnetix CLI.
-vulnetix scan --rule Vulnetix/community-rules
+# Loads and emits findings directly under the Vulnesis CLI.
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Licensing note

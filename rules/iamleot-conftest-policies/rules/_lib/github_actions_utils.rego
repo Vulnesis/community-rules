@@ -2,7 +2,7 @@
 # Original License: BSD-2-Clause (see LICENSE).
 # Helper package — not a rule (no metadata/findings).
 
-package vulnetix.iamleot.github_actions_utils
+package vulnesis.iamleot.github_actions_utils
 
 import rego.v1
 

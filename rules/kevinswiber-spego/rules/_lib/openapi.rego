@@ -1,8 +1,8 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Shared helpers for the Vulnetix port: detect OpenAPI/Swagger documents in
+# Shared helpers for the Vulnesis port: detect OpenAPI/Swagger documents in
 # input.file_contents and expose a parsed view to the rules.
 
-package vulnetix.spego.openapi
+package vulnesis.spego.openapi
 
 import rego.v1
 

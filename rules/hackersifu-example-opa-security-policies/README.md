@@ -29,13 +29,13 @@ hackersifu-example-opa-security-policies/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` text-scanning shape. The Terraform rules scan `*.tf` source files (HCL), and the CloudFormation rule scans JSON/YAML template files for `AWS::EC2::SecurityGroup` resources.
+**Ported** to the Vulnesis `input.file_contents` text-scanning shape. The Terraform rules scan `*.tf` source files (HCL), and the CloudFormation rule scans JSON/YAML template files for `AWS::EC2::SecurityGroup` resources.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-# Loads and emits findings directly under the Vulnetix CLI.
-vulnetix scan --rule Vulnetix/community-rules
+# Loads and emits findings directly under the Vulnesis CLI.
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

@@ -7,9 +7,9 @@
 ## What these rules cover
 
 A port of common **OpenAPI Specification (OAS) 3.x linting rules** to Rego
-under the Vulnetix input shape — originally modelled after the Spectral
+under the Vulnesis input shape — originally modelled after the Spectral
 ruleset. Each rule walks every OpenAPI document found in
-`input.file_contents` and emits Vulnetix findings.
+`input.file_contents` and emits Vulnesis findings.
 
 | Rule ID | Spectral name | Purpose |
 |---|---|---|
@@ -42,7 +42,7 @@ ruleset. Each rule walks every OpenAPI document found in
 
 ```
 kevinswiber-spego/
-├── _lib/openapi.rego          (vulnetix.spego.openapi helper)
+├── _lib/openapi.rego          (vulnesis.spego.openapi helper)
 ├── policies/
 │   └── <rule-name>/<rule-name>.rego
 └── README.md
@@ -50,8 +50,8 @@ kevinswiber-spego/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` input shape. The shared
-helper `vulnetix.spego.openapi` detects OpenAPI/Swagger files by extension
+**Ported** to the Vulnesis `input.file_contents` input shape. The shared
+helper `vulnesis.spego.openapi` detects OpenAPI/Swagger files by extension
 (`.yaml`, `.yml`, `.json`), parses them with `yaml.unmarshal` /
 `json.unmarshal`, and exposes the parsed docs via `openapi.specs`. Each
 rule iterates over `openapi.specs` and applies the equivalent Spectral
@@ -67,10 +67,10 @@ Notes on the port vs. upstream:
 - The helper accepts any JSON/YAML file as a candidate but only emits
   findings when the parsed object carries `openapi` or `swagger` keys.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-vulnetix scan --rule Vulnetix/community-rules
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

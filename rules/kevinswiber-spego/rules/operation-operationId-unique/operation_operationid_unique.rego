@@ -1,14 +1,14 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 #
 # The upstream rule was document-local. Under text scanning we retain that:
 # uniqueness is checked only among operations in the same OpenAPI document.
 
-package vulnetix.rules.spego_operation_operationid_unique
+package vulnesis.rules.spego_operation_operationid_unique
 
 import rego.v1
 
-import data.vulnetix.spego.openapi
+import data.vulnesis.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0011",

@@ -28,13 +28,13 @@ hojjatsajjadinia-opa-security-rules/
 
 ## Input-schema compatibility
 
-**Ported** to the Vulnetix `input.file_contents` text-scanning shape. Each Dockerfile-like file is scanned line by line; the rule emits findings directly.
+**Ported** to the Vulnesis `input.file_contents` text-scanning shape. Each Dockerfile-like file is scanned line by line; the rule emits findings directly.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-# Loads and emits findings directly under the Vulnetix CLI.
-vulnetix scan --rule Vulnetix/community-rules
+# Loads and emits findings directly under the Vulnesis CLI.
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

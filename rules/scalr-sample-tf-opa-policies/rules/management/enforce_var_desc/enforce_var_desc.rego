@@ -1,11 +1,11 @@
 # Adapted from https://github.com/Scalr/sample-tf-opa-policies
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.scalr_enforce_var_desc
+package vulnesis.rules.scalr_enforce_var_desc
 
 import rego.v1
 
-import data.vulnetix.scalr.tf
+import data.vulnesis.scalr.tf
 
 metadata := {
 	"id": "SCALR-MGMT-0003",

@@ -1,12 +1,12 @@
 # Adapted from https://github.com/iamleot/conftest-policies
 # Original License: BSD-2-Clause (see LICENSE).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.iamleot_gha_setup_version
+package vulnesis.rules.iamleot_gha_setup_version
 
 import rego.v1
 
-import data.vulnetix.iamleot.github_actions_utils as utils
+import data.vulnesis.iamleot.github_actions_utils as utils
 
 metadata := {
 	"id": "IAMLEOT-GHA-VER-001",

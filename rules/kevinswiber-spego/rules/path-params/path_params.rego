@@ -1,5 +1,5 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 #
 # The upstream rule bundles several checks. We implement three text-tractable
 # checks here:
@@ -13,11 +13,11 @@
 # upstream is out of scope because it depends on precise param name captures
 # and produces a lot of noise when applied by prefix alone.
 
-package vulnetix.rules.spego_path_params
+package vulnesis.rules.spego_path_params
 
 import rego.v1
 
-import data.vulnetix.spego.openapi
+import data.vulnesis.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0021",

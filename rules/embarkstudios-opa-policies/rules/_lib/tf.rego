@@ -1,11 +1,11 @@
 # Helper package — not a rule (no metadata/findings).
-# Shared by the EmbarkStudios/opa-policies Terraform/GCP Vulnetix ports.
+# Shared by the EmbarkStudios/opa-policies Terraform/GCP Vulnesis ports.
 #
 # Upstream rules consumed `input.resource.<type>.<name>` (terraform HCL parsed
-# by conftest). Under Vulnetix we scan raw `.tf` source via input.file_contents,
+# by conftest). Under Vulnesis we scan raw `.tf` source via input.file_contents,
 # so this provides regex helpers to pull resource blocks and attributes.
 
-package vulnetix.embark.tf
+package vulnesis.embark.tf
 
 import rego.v1
 

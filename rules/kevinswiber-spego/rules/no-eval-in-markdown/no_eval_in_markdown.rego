@@ -1,15 +1,15 @@
 # Adapted from https://github.com/kevinswiber/spego
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 #
 # Upstream walked the entire parsed OpenAPI tree looking for `title` and
 # `description` fields containing `eval(`. Walking the parsed object under
 # text scanning is preserved via `walk(spec.doc)`.
 
-package vulnetix.rules.spego_no_eval_in_markdown
+package vulnesis.rules.spego_no_eval_in_markdown
 
 import rego.v1
 
-import data.vulnetix.spego.openapi
+import data.vulnesis.spego.openapi
 
 metadata := {
 	"id": "SPEGO-OAS-0022",

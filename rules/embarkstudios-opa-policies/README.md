@@ -1,11 +1,11 @@
-# EmbarkStudios/opa-policies (Vulnetix clean-room port)
+# EmbarkStudios/opa-policies (Vulnesis clean-room port)
 
 - Upstream: https://github.com/EmbarkStudios/opa-policies
 - Commit SHA at import: `c6377cad4660e010dc0bb01bb1a5fcf04efa60be`
 
 The upstream repository ships three policy suites designed to be run via
 `conftest` against pre-parsed inputs: Terraform HCL (GCP), Kubernetes manifests,
-and Dockerfiles. Under Vulnetix every rule analyses raw text via
+and Dockerfiles. Under Vulnesis every rule analyses raw text via
 `input.file_contents` (map of file path → file content), so this port replaces
 the upstream input schema with helpers that parse the text directly.
 
@@ -13,9 +13,9 @@ the upstream input schema with helpers that parse the text directly.
 
 ```
 _lib/
-  docker.rego   # vulnetix.embark.docker — Dockerfile instruction parser
-  k8s.rego      # vulnetix.embark.k8s    — multi-doc YAML workload parser
-  tf.rego       # vulnetix.embark.tf     — regex-based HCL resource scanner
+  docker.rego   # vulnesis.embark.docker — Dockerfile instruction parser
+  k8s.rego      # vulnesis.embark.k8s    — multi-doc YAML workload parser
+  tf.rego       # vulnesis.embark.tf     — regex-based HCL resource scanner
 policies/
   docker/         # 7 Dockerfile rules
   kubernetes/     # 20 Kubernetes rules
@@ -25,11 +25,11 @@ policies/
 
 Each rule file is a standalone Rego module declaring a `metadata` object
 (id, name, severity, help_uri, cwe, …) and a `findings` partial set shaped
-to the Vulnetix SAST rule schema.
+to the Vulnesis SAST rule schema.
 
 ## Rule ID mapping
 
-Upstream IDs use the prefix `DOCKER_`, `K8S_`, or `TF_GCP_`. Vulnetix IDs are
+Upstream IDs use the prefix `DOCKER_`, `K8S_`, or `TF_GCP_`. Vulnesis IDs are
 `EMBARK-<PREFIX>-<NN>` preserving the upstream number, e.g. `K8S_10` ↔
 `EMBARK-K8S-10`. The original wiki link is retained in `help_uri`.
 

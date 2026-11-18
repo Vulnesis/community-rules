@@ -23,13 +23,13 @@ int128-conftest-docker-hub-image-pull-secrets/
 
 ## Input-schema compatibility
 
-**Ported** from the Conftest-parsed-YAML shape to the Vulnetix `input.file_contents` text-scanning shape. The adapted rule splits each YAML file on `---` separators and inspects each document for `kind:`, `imagePullSecrets:`, and `image:` fields via regex.
+**Ported** from the Conftest-parsed-YAML shape to the Vulnesis `input.file_contents` text-scanning shape. The adapted rule splits each YAML file on `---` separators and inspects each document for `kind:`, `imagePullSecrets:`, and `image:` fields via regex.
 
-## Using with the Vulnetix CLI
+## Using with the Vulnesis CLI
 
 ```bash
-# Loads and emits findings directly under the Vulnetix CLI.
-vulnetix scan --rule Vulnetix/community-rules
+# Loads and emits findings directly under the Vulnesis CLI.
+vulnesis scan --rule Vulnesis/community-rules
 ```
 
 ## Attribution

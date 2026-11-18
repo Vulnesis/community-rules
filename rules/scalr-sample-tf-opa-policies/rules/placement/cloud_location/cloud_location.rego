@@ -1,16 +1,16 @@
 # Adapted from https://github.com/Scalr/sample-tf-opa-policies
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 #
 # Upstream pulled provider regions from the plan configuration tree. Under
 # text scanning we check the AWS `provider "aws" { region = "..." }` block,
 # the azurerm resource `location` attribute, and the google resource `zone`
 # attribute — each against its provider-specific allow-list.
 
-package vulnetix.rules.scalr_cloud_location
+package vulnesis.rules.scalr_cloud_location
 
 import rego.v1
 
-import data.vulnetix.scalr.tf
+import data.vulnesis.scalr.tf
 
 metadata := {
 	"id": "SCALR-PLACE-0001",

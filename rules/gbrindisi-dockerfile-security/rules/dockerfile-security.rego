@@ -1,9 +1,9 @@
 # Adapted from https://github.com/gbrindisi/dockerfile-security
 # Original License: GPL-3.0 (see LICENSE).
-# Ported to the Vulnetix Rego input schema: `input.file_contents`
+# Ported to the Vulnesis Rego input schema: `input.file_contents`
 # maps file path -> full file text content.
 
-package vulnetix.rules.gbrindisi_dockerfile_security
+package vulnesis.rules.gbrindisi_dockerfile_security
 
 import rego.v1
 

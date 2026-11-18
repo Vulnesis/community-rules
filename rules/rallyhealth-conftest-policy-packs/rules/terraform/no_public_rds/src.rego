@@ -1,11 +1,11 @@
 # Adapted from https://github.com/rallyhealth/conftest-policy-packs
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.rally_no_public_rds
+package vulnesis.rules.rally_no_public_rds
 
 import rego.v1
 
-import data.vulnetix.rallyhealth.util
+import data.vulnesis.rallyhealth.util
 
 metadata := {
 	"id": "AWSSEC-0003",

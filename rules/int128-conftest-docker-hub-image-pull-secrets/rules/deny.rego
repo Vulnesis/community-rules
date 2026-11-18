@@ -1,8 +1,8 @@
 # Adapted from https://github.com/int128/conftest-docker-hub-image-pull-secrets
 # Original License: Apache-2.0 (see LICENSE).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.int128_docker_hub_image_pull_secrets
+package vulnesis.rules.int128_docker_hub_image_pull_secrets
 
 import rego.v1
 

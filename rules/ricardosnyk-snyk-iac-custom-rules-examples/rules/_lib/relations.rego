@@ -1,9 +1,9 @@
 # Adapted from https://github.com/ricardosnyk/snyk-iac-custom-rules-examples
 # Helper package — not a rule (no metadata/findings).
-# Under Vulnetix's text-scanning model, rules perform joins by matching
+# Under Vulnesis's text-scanning model, rules perform joins by matching
 # referenced resource names via regex rather than via snyk.relates().
 
-package vulnetix.ricardosnyk.relations
+package vulnesis.ricardosnyk.relations
 
 import rego.v1
 

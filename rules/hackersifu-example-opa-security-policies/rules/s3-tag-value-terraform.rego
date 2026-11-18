@@ -1,8 +1,8 @@
 # Adapted from https://github.com/hackersifu/example_opa_security_policies
 # Original License: Apache-2.0 (see LICENSE).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
-package vulnetix.rules.hackersifu_s3_required_tag
+package vulnesis.rules.hackersifu_s3_required_tag
 
 import rego.v1
 

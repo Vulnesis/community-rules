@@ -1,5 +1,5 @@
 # Adapted from https://github.com/Scalr/sample-tf-opa-policies
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 #
 # Upstream walked the plan's configuration tree to distinguish constant
 # values, variables, and data-source references. Under text scanning we can
@@ -8,11 +8,11 @@
 #   (2) KMS key ID / ARN attributes on supported resources must reference a
 #       `data.aws_kms_key.*` source rather than a raw string.
 
-package vulnetix.rules.scalr_enforce_kms_key_names
+package vulnesis.rules.scalr_enforce_kms_key_names
 
 import rego.v1
 
-import data.vulnetix.scalr.tf
+import data.vulnesis.scalr.tf
 
 metadata := {
 	"id": "SCALR-AWS-0006",
